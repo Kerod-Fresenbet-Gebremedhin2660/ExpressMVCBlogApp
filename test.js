@@ -10,5 +10,6 @@ BlogPost.create(
         'title': 'A tale of two chapters',
         'body': 'intriguing book on a tale of two chapters',
         'username': 'Abebe',
+        'image': 'about-bg.jpg'
     }
 ).then(r => console.log(r))

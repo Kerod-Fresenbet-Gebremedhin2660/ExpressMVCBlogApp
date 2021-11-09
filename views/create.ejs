@@ -8,18 +8,16 @@
         <div class="row gx-4 gx-lg-5 justify-content-center">
             <div class="col-md-10 col-lg-8 col-xl-7">
                 <div class="site-heading">
-                    <h1>Clean Blog</h1>
-                    <span class="subheading">A Blog Theme by Start Bootstrap</span>
+                    <h1>Blog Post- Express Yourself 😉</h1>
                 </div>
             </div>
         </div>
     </div>
 </header>
-
 <h1>
     Create New Post
 </h1>
-<form action="/posts/store" method="POST">
+<form action="/posts/store" enctype="multipart/form-data" method="POST">
     <div class="control-group">
         <div class="form-group floating-label-form-group controls">
             <label for="title">Title</label>
@@ -33,6 +31,14 @@
             <textarea rows="5" class="form-control"
                       id="body" name=”body” ></textarea>
         </div>
+    </div>
+    <br>
+    <div class="control-group">
+    <div class="form-group floating-label-form-group controls">
+        <label for="image">Image</label>
+        <input type="file" class="form-control" id="image"
+               name="image">
+    </div>
     </div>
     <br>
     <div class="form-group">
